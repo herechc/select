@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Examples</title>
+<meta content="target-densitydpi=medium-dpi,width=640, user-scalable=0" name="viewport" />
+<script type="text/javascript">
+	 var html = document.querySelector('html');
+     var rem = html.offsetWidth / 6.4;
+         html.style.fontSize = rem + "px";
+</script>
+<style type="text/css">
+	* {
+    padding: 0;
+    margin: 0;
+	}
+	body, html {
+	    width: 100%;
+	    height: 100%;
+	    overflow: hidden;
+	}
+	.stMask{width:100%;height:100%;background:rgba(0,0,0,0.5);position:fixed;font-size:0.3rem;z-index:99999;}
+	.stselectbd{width:100%;-webkit-transform:translate3d(0,100%,0);-webkit-transition:-webkit-transform 300ms linear;position:absolute;bottom:0rem;}
+	.stlist{width:100%;background-color:#303030;overflow:auto;height:3rem;display:none;}
+	.stselectTip{width:100%;background-color:#000;text-align:center;line-height:100%;height:0.8rem;color:#848484;line-height:0.8rem;}
+	.stMask ul li:nth-child(2n+1){background-color:#242424;}
+	.stMask li{width:100%;height:0.6rem;background-color:#343434;text-align:center;line-height:0.6rem;color:#fff;}
+	.stselectbd.show{-webkit-transform:translate3d(0,0,0);}
+	.dishow{display:block;}
+</style>
+</head>
+<body>
+   <!--  <div class="stMask">
+    	<div class="stselectbd">
+    		<h3 class="stselectTip">选择列表1</h3>
+			<ul class="stlist" id="stselect1">
+				<li>广东省</li>
+				<li>广东省</li>
+				<li>广东省</li>
+				<li>广东省</li>
+				<li>广东省</li>
+				<li>广东省</li>
+				<li>广东省</li>
+				<li>广东省</li>
+				<li>广东省</li>
+				<li>广东省</li>
+			</ul>
+    	</div>
+    </div> -->
+</body>
+<script src="hcselect.js"></script>
+</html>
